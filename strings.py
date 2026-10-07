@@ -63,12 +63,24 @@
 # print(my_list)
 
 #length function gives no if elements in the list
-nums = [1, 2, 3, 4, 5]
-print(len(nums))
-#sum
-print(sum(nums))
-#sorting
-nums = [5, 2, 8, 1, 3]
+# nums = [1, 2, 3, 4, 5]
+# print(len(nums))
+# #sum
+# print(sum(nums))
+# #sorting
+# nums = [5, 2, 8, 1, 3]
 
-print(sorted(nums))
-print(sorted(nums, reverse=True))
+# print(sorted(nums))
+# print(sorted(nums, reverse=True))
+
+#create a list of 10 numbers and display the sum of last 4 elements
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(sum(nums[-4:]))
+#remove the items from the list located at 2nd and 5th position.
+print("Before removing elements:", nums)
+nums.pop(1)  
+nums.pop(3)   
+print("After removing 2nd and 5th elements:", nums)
+#print the difference between the highest and smallest number in the list.
+print("Difference between highest and smallest number:", max(nums) - min(nums))
+#append a new element in the list which is half of the item of 3rd postion in the list.
