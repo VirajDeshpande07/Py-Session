@@ -55,3 +55,20 @@
 # sorted_string = sorted(string)
 # print(sorted_string)
 
+# empty list
+# my_list = []
+# # add elements to the list
+# fruits = ["apple", "mango"]
+# my_list.extend(fruits)
+# print(my_list)
+
+#length function gives no if elements in the list
+nums = [1, 2, 3, 4, 5]
+print(len(nums))
+#sum
+print(sum(nums))
+#sorting
+nums = [5, 2, 8, 1, 3]
+
+print(sorted(nums))
+print(sorted(nums, reverse=True))
