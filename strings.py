@@ -84,3 +84,4 @@ print("After removing 2nd and 5th elements:", nums)
 #print the difference between the highest and smallest number in the list.
 print("Difference between highest and smallest number:", max(nums) - min(nums))
 #append a new element in the list which is half of the item of 3rd postion in the list.
+nums.append(nums[2] / 2)
