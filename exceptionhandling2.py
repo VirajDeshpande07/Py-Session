@@ -7,9 +7,7 @@ try:
     if amount > 1000:
         raise ValueError("Insufficient Balance")
     else:
-        print("Processing withdrawal...")
-
-    balance -= amount
+     balance -= amount
 
     print("Withdrawal Successful")
     print("Remaining Balance:", balance)
@@ -19,4 +17,4 @@ except ValueError as e:
 except Exception as e:
     print("An unexpected error occurred:", e)
 finally:
-    print("Transaction completed.")
+    print("Program Executed.")
