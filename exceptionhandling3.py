@@ -13,3 +13,6 @@ try:
 
 except ValueError as e:
     print("Error:", e)
+
+finally:
+    print("Password validation completed.")
