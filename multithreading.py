@@ -48,3 +48,22 @@ print("Main program ends.")
 #Context       OS controlled         Python event loop
 #Switching
 #Complexity    Easy to Understand    Harder Initially.
+
+import threading
+import time 
+def sqaure(num):
+    print("Square: ",(num*num))
+    time.sleep(1)
+def cube(num):
+    print("cube: ",(num*num*num))
+    time.sleep(2)
+
+#create thread using threading module.thread function
+t1 = threading.Thread(target=sqaure args(4,))
+t2 = threading.Thread(target=cube args(4,))
+
+t1.start()
+t2.start()
+
+t1.join()
+t2.join()
